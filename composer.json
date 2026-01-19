@@ -16,7 +16,7 @@
         "drupal/core-composer-scaffold": "^9.5 || ^10.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "lowellmontgomery/walipa_drupal_social": "dev-master",
-        "npm-asset/autosize": "*"
+        "npm-asset/autosize": "^4.0"
     },
     "repositories": [
         {
