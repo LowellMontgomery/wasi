@@ -1,6 +1,6 @@
 {
-    "name": "LowellMontgomery/social_docker",
-    "description": "Social docker template for composer based Open Social projects.",
+    "name": "lowellmontgomery/social-template",
+    "description": "Social template for composer based Open Social projects.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
@@ -22,7 +22,7 @@
     },
     "require": {
         "drupal/redis": "^1.5",
-        "LowellMontgomery/walipa_drupal_social": "dev-master"
+        "lowellmontgomery/walipa_drupal_social": "dev-master"
     },
     "require-dev": {
         "composer/composer": "^2",
@@ -34,7 +34,7 @@
         "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8",
-            "exclude": ["LowellMontgomery/walipa_drupal_social", "drupal/social"]
+            "exclude": ["lowellmontgomery/walipa_drupal_social", "drupal/social"]
         },
         "1": {
             "type": "composer",
@@ -57,18 +57,12 @@
             "url": "https://github.com/LowellMontgomery/walipa_drupal_social.git"
         }
     },
-    "scripts": {
-        "refresh": [
-            "rm -rf composer.lock vendor html/core html/modules/contrib html/profiles/contrib html/themes/contrib",
-            "@composer update -W --ansi"
-        ]
-    },
     "extra": {
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "html/core": ["drupal/core"],
             "html/modules/contrib/{$name}": ["type:drupal-module"],
-            "html/profiles/contrib/social": ["LowellMontgomery/walipa_drupal_social"],
+            "html/profiles/contrib/social": ["lowellmontgomery/walipa_drupal_social"],
             "html/profiles/contrib/{$name}": ["type:drupal-profile"],
             "html/themes/contrib/{$name}": ["type:drupal-theme"],
             "html/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
