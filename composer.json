@@ -4,7 +4,15 @@
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true
+        }
+    },
     "require": {
+        "composer/installers": "^2.0",
+        "drupal/core-composer-scaffold": "^10.0",
         "lowellmontgomery/walipa_drupal_social": "dev-master"
     },
     "repositories": [
