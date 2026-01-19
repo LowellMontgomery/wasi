@@ -57,12 +57,6 @@
             "url": "https://github.com/LowellMontgomery/walipa_drupal_social.git"
         }
     },
-    "scripts": {
-        "refresh": [
-            "rm -rf composer.lock vendor html/core html/modules/contrib html/profiles/contrib html/themes/contrib",
-            "@composer update -W --ansi"
-        ]
-    },
     "extra": {
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
