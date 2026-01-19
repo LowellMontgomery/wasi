@@ -9,12 +9,12 @@ distribution</a>.
 
 # Quick installation?
 We have a template available at
-<a target="_blank" href="https://github.com/goalgorilla/social_template/">
-goalgorilla/social_template</a>
+<a target="_blank" href="https://github.com/LowellMontgomery/LowellMontgomery/walipa_social_template/">
+LowellMontgomery/walipa_social_template</a>
 
 # Want to help contribute?
 Be sure to check out our repository with development tools on
-<a target="_blank" href="https://github.com/goalgorilla/drupal_social/">
+<a target="_blank" href="https://github.com/LowellMontgomery/walipa_drupal_social/">
 Github</a>
 
 For any other information be sure to checkout our
