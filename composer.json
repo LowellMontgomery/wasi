@@ -16,7 +16,7 @@
         "drupal/core-composer-scaffold": "^9.5 || ^10.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "lowellmontgomery/walipa_drupal_social": "dev-master",
-        "npm-asset/autosize": "^4.0"
+        "npm-asset/autosize": "*"
     },
     "repositories": [
         {
@@ -35,6 +35,19 @@
     "extra": {
         "installer-types": ["npm-asset", "bower-asset"],
         "installer-paths": {
+            "html/core": ["type:drupal-core"],
+            "html/profiles/contrib/social": ["lowellmontgomery/walipa_drupal_social"],
+            "html/modules/contrib/{$name}": ["type:drupal-module"],
+            "html/themes/contrib/{$name}": ["type:drupal-theme"],
+            "html/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"]
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "html/"
+            }
+        }
+    }
+}        "installer-paths": {
             "html/core": ["type:drupal-core"],
             "html/profiles/contrib/social": ["lowellmontgomery/walipa_drupal_social"],
             "html/modules/contrib/{$name}": ["type:drupal-module"],
