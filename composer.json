@@ -14,7 +14,8 @@
     "require": {
         "composer/installers": "^1.9 || ^2.0",
         "drupal/core-composer-scaffold": "^9.5 || ^10.0",
-        "lowellmontgomery/walipa_drupal_social": "*"
+        "oomphinc/composer-installers-extender": "^2.0",
+        "lowellmontgomery/walipa_drupal_social": "dev-master"
     },
     "repositories": [
         {
@@ -31,6 +32,7 @@
         }
     ],
     "extra": {
+        "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "html/core": ["type:drupal-core"],
             "html/profiles/contrib/social": ["lowellmontgomery/walipa_drupal_social"],
