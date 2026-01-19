@@ -9,7 +9,8 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "oomphinc/composer-installers-extender": true
-        }
+        },
+        "sort-packages": true
     },
     "require": {
         "composer/installers": "^1.9 || ^2.0",
@@ -21,11 +22,11 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://asset-packagist.org"
         },
         {
             "type": "composer",
-            "url": "https://asset-packagist.org"
+            "url": "https://packages.drupal.org/8"
         },
         {
             "type": "vcs",
