@@ -13,7 +13,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/core-composer-scaffold": "^10.0",
-        "lowellmontgomery/walipa_drupal_social": "dev-master"
+        "lowellmontgomery/walipa_drupal_social": "*"
     },
     "repositories": [
         {
@@ -34,6 +34,11 @@
         },
         "drupal-scaffold": {
             "locations": {
+                "web-root": "html/"
+            }
+        }
+    }
+}
                 "web-root": "html/"
             }
         }
