@@ -7,13 +7,15 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
-            "drupal/core-composer-scaffold": true
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true
         }
     },
     "require": {
-        "composer/installers": "^2.0",
-        "drupal/core-composer-scaffold": "^10.0",
-        "lowellmontgomery/walipa_drupal_social": "*"
+        "composer/installers": "^1.9 || ^2.0",
+        "drupal/core-composer-scaffold": "^9.5 || ^10.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "lowellmontgomery/walipa_drupal_social": "dev-master"
     },
     "repositories": [
         {
@@ -21,16 +23,22 @@
             "url": "https://packages.drupal.org/8"
         },
         {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/LowellMontgomery/walipa_drupal_social.git"
         }
     ],
     "extra": {
+        "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "html/core": ["type:drupal-core"],
             "html/profiles/contrib/social": ["lowellmontgomery/walipa_drupal_social"],
             "html/modules/contrib/{$name}": ["type:drupal-module"],
-            "html/themes/contrib/{$name}": ["type:drupal-theme"]
+            "html/themes/contrib/{$name}": ["type:drupal-theme"],
+            "html/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"]
         },
         "drupal-scaffold": {
             "locations": {
