@@ -12,20 +12,20 @@
         }
     },
     "require": {
-        "composer/installers": "^2.0",
-        "drupal/core-composer-scaffold": "^10.0",
+        "composer/installers": "^1.9 || ^2.0",
+        "drupal/core-composer-scaffold": "^9.5 || ^10.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "lowellmontgomery/walipa_drupal_social": "dev-master",
-        "npm-asset/autosize": "^4.0"
+        "npm-asset/autosize": "^4.0.2"
     },
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://asset-packagist.org"
         },
         {
             "type": "composer",
-            "url": "https://asset-packagist.org"
+            "url": "https://packages.drupal.org/8"
         },
         {
             "type": "vcs",
