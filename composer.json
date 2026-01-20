@@ -9,14 +9,15 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "oomphinc/composer-installers-extender": true
-        }
+        },
+        "sort-packages": true
     },
     "require": {
         "composer/installers": "^1.9 || ^2.0",
         "drupal/core-composer-scaffold": "^9.5 || ^10.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "lowellmontgomery/walipa_drupal_social": "dev-master",
-        "npm-asset/autosize": "*"
+        "npm-asset/autosize": "^4.0.2"
     },
     "repositories": [
         {
