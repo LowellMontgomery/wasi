@@ -10,7 +10,8 @@
             "drupal/core-composer-scaffold": true,
             "oomphinc/composer-installers-extender": true
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "memory-limit": "-1"
     },
     "require": {
         "composer/installers": "^1.9 || ^2.0",
