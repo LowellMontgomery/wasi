@@ -10,15 +10,14 @@
             "drupal/core-composer-scaffold": true,
             "oomphinc/composer-installers-extender": true
         },
-        "sort-packages": true,
-        "memory-limit": "4G"
+        "sort-packages": true
     },
     "require": {
-        "composer/installers": "^1.9 || ^2.0",
+        "composer/installers": "^2.0",
         "drupal/core-composer-scaffold": "^9.5 || ^10.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "lowellmontgomery/walipa_drupal_social": "dev-master",
-        "npm-asset/autosize": "*"
+        "npm-asset/autosize": "^4.0.2"
     },
     "repositories": [
         {
@@ -41,5 +40,12 @@
             "html/profiles/contrib/social": ["lowellmontgomery/walipa_drupal_social"],
             "html/modules/contrib/{$name}": ["type:drupal-module"],
             "html/themes/contrib/{$name}": ["type:drupal-theme"],
-            "html/libraries/{$name
-            
+            "html/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"]
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "html/"
+            }
+        }
+    }
+}
